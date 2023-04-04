@@ -21,9 +21,9 @@ with col1:
 
 with col2:
     st.subheader("Enter $\Phi_l$ value")
-    Ld=st.number_input('Large diameter (mm)',value=45.5)
+    Ld=st.number_input('Large diameter (mm)',value=45.5,min_value=0.0)
     st.subheader("Enter $\Phi_s$ value")
-    Sd=st.number_input('Small length (mm)',value=38.9)
+    Sd=st.number_input('Small length (mm)',value=38.9,min_value=0.0,max_value=Ld)
 
     Af=area_tronc_cyl(Ld,Sd)
 
