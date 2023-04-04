@@ -34,3 +34,6 @@ def theor_weight(AreaSample,stress=0.8):
     '''
     Mth=(stress*AreaSample-22.38)/(0.14) #Etallonage à revoir
     return Mth
+
+def length_surface_dic(Dlarge,Dsmall):
+    return (4*(Dlarge**2/4-(Dlarge-Dsmall)**2))**0.5

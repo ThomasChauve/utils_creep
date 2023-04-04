@@ -40,3 +40,5 @@ with col2:
     ww=theor_weight(Af,stress=stress)
     
     st.metric(label="Mass (g)", value=np.round(ww))
+
+    st.write('The larger of the flat surface is : '+str(round(length_surface_dic(Ld,Sd),2))+' mm.' )
